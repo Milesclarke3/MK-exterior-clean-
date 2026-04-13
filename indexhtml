@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Exterior Cleaning | Calgary Power Washing</title>
+    <style>
+        /* Modern Design Overhaul */
+        :root {
+            --baby-blue: #89CFF0;
+            --deep-blue: #5DADE2;
+            --silver: #C0C0C0;
+            --white: #ffffff;
+            --dark: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Header with more Blue */
+        header {
+            background-color: var(--baby-blue);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
+
+        .nav-phone { font-weight: bold; font-size: 1.1em; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--baby-blue) 0%, var(--deep-blue) 100%);
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+            border-bottom: 5px solid var(--silver);
+        }
+
+        .hero h2 { font-size: 48px; margin-bottom: 20px; }
+        .hero p { font-size: 22px; margin-bottom: 40px; opacity: 0.9; }
+
+        /* Pricing & Services Section */
+        .pricing-container {
+            max-width: 1100px;
+            margin: -50px auto 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .price-card {
+            background: var(--white);
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border: 1px solid var(--silver);
+            transition: transform 0.3s ease;
+        }
+
+        .price-card:hover { transform: translateY(-10px); }
+
+        .price-card h3 { color: var(--deep-blue); margin-top: 0; }
+        .price-tag { font-size: 36px; font-weight: bold; color: var(--dark); margin: 15px 0; }
+        .price-tag span { font-size: 18px; color: #777; }
+
+        /* Call to Action Button */
+        .btn {
+            background-color: var(--baby-blue);
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(137, 207, 240, 0.4);
+        }
+
+        .btn:hover { background-color: var(--dark); transform: scale(1.05); }
+
+        /* Contact Section */
+        .contact-info {
+            background-color: #f4f9ff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .phone-links {
+            font-size: 28px;
+            color: var(--deep-blue);
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MK EXTERIOR CLEANING</h1>
+        <div class="nav-phone">Calgary, AB</div>
+    </header>
+
+    <section class="hero">
+        <h2>Premium Power Washing</h2>
+        <p>Expert care for your home’s exterior surfaces.</p>
+        <a href="tel:4038050043" class="btn">CALL FOR A FREE QUOTE</a>
+    </section>
+
+    <div class="pricing-container">
+        <div class="price-card">
+            <h3>Exterior House Cleaning</h3>
+            <p>Full siding and soft wash to remove grime and buildup.</p>
+            <div class="price-tag"><span>Starting at</span><br>$250</div>
+        </div>
+
+        <div class="price-card">
+            <h3>Driveways & Walkways</h3>
+            <p>Deep pressure cleaning for concrete, brick, and stone.</p>
+            <div class="price-tag"><span>Starting at</span><br>$125</div>
+        </div>
+    </div>
+
+    <section class="contact-info" id="contact">
+        <h2>Ready to book?</h2>
+        <p>Call or text us today to schedule your cleaning!</p>
+        <a href="tel:4038050043" class="phone-links">403-805-0043</a>
+        <a href="tel:4034046643" class="phone-links">403-404-6643</a>
+        <p style="margin-top:20px; color:#666;">Serving Calgary and Surrounding Areas</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MK Exterior Cleaning. | Professional. Reliable. Local.</p>
+    </footer>
+
+</body>
+</html>
