@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Exterior Cleaning | A Powerful Clean</title>
+    <style>
+        /* MK Exterior Cleaning Brand Colors */
+        :root {
+            --baby-blue: #89CFF0;
+            --silver: #C0C0C0;
+            --white: #FFFFFF;
+            --dark-gray: #333333;
+            --light-bg: #f8f9fa;
+        }
+
+        /* General Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: var(--white);
+            border-bottom: 3px solid var(--silver);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .nav-logo img {
+            height: 60px; /* Adjusts logo size in the header */
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--baby-blue);
+        }
+
+        .quote-btn-nav {
+            background-color: var(--baby-blue);
+            color: var(--white);
+            padding: 10px 20px;
+            border: 2px solid var(--baby-blue);
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+        }
+
+        .quote-btn-nav:hover {
+            background-color: var(--white);
+            color: var(--baby-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--white) 0%, var(--silver) 100%);
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--baby-blue);
+        }
+
+        .hero img {
+            max-width: 400px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.1));
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #555;
+        }
+
+        .hero-btn {
+            background-color: var(--baby-blue);
+            color: var(--white);
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: #6bbce6; /* Slightly darker baby blue */
+            transform: translateY(-2px);
+        }
+
+        /* Services Section (Grid Layout) */
+        .services-section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: var(--white);
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--baby-blue);
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        .services-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: var(--light-bg);
+            border-top: 4px solid var(--baby-blue);
+            border-radius: 8px;
+            padding: 30px;
+            width: 350px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            text-align: left;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 20px;
+            background-color: var(--silver);
+            color: var(--dark-gray);
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .about-item {
+            background-color: var(--white);
+            padding: 25px;
+            border-left: 5px solid var(--baby-blue);
+            border-radius: 4px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        .about-item h3 {
+            margin-bottom: 10px;
+            color: var(--baby-blue);
+        }
+
+        /* Footer & Contact */
+        footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer h2 {
+            margin-bottom: 15px;
+            color: var(--baby-blue);
+        }
+
+        footer a {
+            color: var(--white);
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: var(--baby-blue);
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Modal (Popup) Form */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 200; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0,0,0,0.6); 
+        }
+
+        .modal-content {
+            background-color: var(--white);
+            margin: 5% auto; 
+            padding: 40px;
+            border-top: 6px solid var(--baby-blue);
+            width: 90%;
+            max-width: 500px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .close {
+            color: var(--silver);
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: var(--dark-gray);
+        }
+
+        .modal-content h2 {
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--silver);
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        form input[type="submit"] {
+            margin-top: 25px;
+            background-color: var(--baby-blue);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #6bbce6;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .nav-links {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .services-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <img src="logo.jpg" alt="MK Exterior Cleaning Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <button class="quote-btn-nav" onclick="openModal()">Free Quote</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <img src="logo.jpg" alt="MK Exterior Cleaning Centerpiece">
+        <h1>A Powerful Clean</h1>
+        <p>Premium exterior cleaning restoring the beauty and value of your property safely and effectively.</p>
+        <button class="hero-btn" onclick="openModal()">Get Your Free Quote</button>
+    </header>
+
+    <section id="services" class="services-section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <h3>Soft Washing</h3>
+                <p>A low-pressure cleaning method designed for delicate surfaces like siding and roofs. We use specialized, eco-friendly solutions to safely remove algae, mold, and mildew at the root, ensuring a deep clean without the risk of high-pressure damage to your home.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Concrete Surfacing</h3>
+                <p>High-pressure surface cleaning that restores the look of driveways, walkways, and patios. We remove deep-set oil stains, dirt, and grime, revitalizing your concrete to its original brightness and significantly boosting your property’s curb appeal.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Fence and Deck</h3>
+                <p>Professional restoration for your outdoor wood structures. Our process removes years of weathering, graying, and organic buildup, cleaning the wood thoroughly to bring back its natural beauty and prep it for sealing or staining.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="section-title" style="text-align: center; color: var(--dark-gray);">Why Choose Us</h2>
+        <div class="about-container">
+            
+            <div class="about-item">
+                <h3>Licensed and Insured</h3>
+                <p>We are a fully licensed and insured business, ensuring that every project is handled with professional accountability. Your property is our top priority, and we carry the necessary coverage to provide you with total peace of mind.</p>
+            </div>
+
+            <div class="about-item">
+                <h3>Extensive Attention to Detail</h3>
+                <p>We pride ourselves on a meticulous approach. From protecting your surrounding plants to ensuring every corner is streak-free, our comprehensive process focuses on the small details that make a massive difference in the final result.</p>
+            </div>
+
+            <div class="about-item">
+                <h3>Commitment to Excellence</h3>
+                <p>We utilize industry-leading equipment and specialized techniques to deliver a level of clean that standard consumer pressure washers simply can't reach. Our goal is to treat your home as if it were our own.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Ready to restore your property's curb appeal? Email us directly:</p>
+        <br>
+        <a href="mailto:mkexteriorcleaning1@gmail.com">mkexteriorcleaning1@gmail.com</a>
+        <p class="copyright">&copy; 2026 MK Exterior Cleaning. All rights reserved.</p>
+    </footer>
+
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Request Your Free Quote</h2>
+            <form action="mailto:mkexteriorcleaning1@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="Name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="Email" placeholder="Enter your email address" required>
+
+                <label for="service">Service Needed:</label>
+                <select id="service" name="Service">
+                    <option value="Soft Washing">Soft Washing</option>
+                    <option value="Concrete Surfacing">Concrete Surfacing</option>
+                    <option value="Fence and Deck">Fence and Deck</option>
+                    <option value="Multiple Services">Multiple Services</option>
+                </select>
+
+                <input type="submit" value="Send Request">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("quoteModal");
+
+        function openModal() {
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Close the modal if the user clicks anywhere outside of the white box
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>  
